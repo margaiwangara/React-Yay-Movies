@@ -22,7 +22,7 @@ class Popular extends Component {
   render() {
     const { results } = this.state;
     const movieList = results.map((movie, key) => {
-      return key < 8 ? (
+      return key < 6 ? (
         <MovieList
           key={movie.id}
           title={movie.original_title}
@@ -36,9 +36,7 @@ class Popular extends Component {
       <section id="popular">
         <div className="popular-inner py-5 px-4">
           <h3 className="display-5 py-3 mb-3 border-bottom">Popular</h3>
-          <div className="row">
-            <div className="movie-grid">{movieList}</div>
-          </div>
+          <div className="row">{movieList}</div>
         </div>
       </section>
     );

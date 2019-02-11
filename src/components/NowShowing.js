@@ -22,15 +22,19 @@ class NowShowing extends Component {
   }
   render() {
     const { results } = this.state;
-    const data = results.map((movie, key) => (
-      <NowShowingSlider
-        key={movie.id}
-        title={movie.original_title}
-        overview={movie.overview}
-        image={"https://image.tmdb.org/t/p/original" + movie.backdrop_path}
-        status={key === 0 ? "active" : ""}
-      />
-    ));
+    const data = results.map((movie, key) => {
+      return key < 6 ? (
+        <NowShowingSlider
+          key={movie.id}
+          title={movie.original_title}
+          overview={movie.overview}
+          image={"https://image.tmdb.org/t/p/original" + movie.backdrop_path}
+          status={key === 0 ? "active" : ""}
+        />
+      ) : (
+        ""
+      );
+    });
 
     const nowShowingStyling = {
       minHeight: "500px",

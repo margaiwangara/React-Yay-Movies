@@ -25,11 +25,11 @@ body {
   color: #ccc;
 }
 
-.movie-grid {
+/* .movie-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   justify-content: center;
-}
+} */
 
 .dark-overlay:hover {
   transform: scale(0.5);
@@ -60,4 +60,8 @@ body {
   height: 100%;
   width: 100%;
   content: "";
+}
+
+.carousel-indicator {
+  list-style-type: circle !important;
 }
