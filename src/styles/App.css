@@ -3,3 +3,30 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+#popular a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+#popular a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+#trending a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+#trending a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: center;
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import NowShowing from "./components/NowShowing";
 import Trending from "./components/Trending";
+import Popular from "./components/Popular";
 
 import "./styles/App.css";
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <Navbar />
         <NowShowing />
         <Trending />
+        <Popular />
       </div>
     );
   }
