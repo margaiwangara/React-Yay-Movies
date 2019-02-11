@@ -23,7 +23,7 @@ class Trending extends Component {
   render() {
     const { results } = this.state;
     const movieList = results.map((movie, key) => {
-      return key < 6 ? (
+      return key < 8 ? (
         <MovieList
           key={movie.id}
           title={movie.original_title}
