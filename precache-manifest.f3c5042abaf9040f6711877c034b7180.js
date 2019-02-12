@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "bdadbc18a25394e364db",
-    "url": "/yaymovies/static/css/main.8bf82273.chunk.css"
+    "revision": "445da3966ad7a385c3ad",
+    "url": "/yaymovies/static/css/main.8699a9d3.chunk.css"
   },
   {
-    "revision": "bdadbc18a25394e364db",
-    "url": "/yaymovies/static/js/main.bdadbc18.chunk.js"
+    "revision": "445da3966ad7a385c3ad",
+    "url": "/yaymovies/static/js/main.445da396.chunk.js"
   },
   {
     "revision": "85b9bde6c31ad370328f",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/yaymovies/static/js/2.54b0294b.chunk.js"
   },
   {
-    "revision": "4dcb7b1afaf37df641dbbf082cde24fc",
+    "revision": "2fc1b2aaf4010ef4a8024503e77d630c",
     "url": "/yaymovies/index.html"
   }
 ];

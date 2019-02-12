@@ -1,13 +1,13 @@
 {
-  "main.css": "/yaymovies/static/css/main.8bf82273.chunk.css",
-  "main.js": "/yaymovies/static/js/main.bdadbc18.chunk.js",
-  "main.js.map": "/yaymovies/static/js/main.bdadbc18.chunk.js.map",
+  "main.css": "/yaymovies/static/css/main.8699a9d3.chunk.css",
+  "main.js": "/yaymovies/static/js/main.445da396.chunk.js",
+  "main.js.map": "/yaymovies/static/js/main.445da396.chunk.js.map",
   "runtime~main.js": "/yaymovies/static/js/runtime~main.85b9bde6.js",
   "runtime~main.js.map": "/yaymovies/static/js/runtime~main.85b9bde6.js.map",
   "static/js/2.54b0294b.chunk.js": "/yaymovies/static/js/2.54b0294b.chunk.js",
   "static/js/2.54b0294b.chunk.js.map": "/yaymovies/static/js/2.54b0294b.chunk.js.map",
   "index.html": "/yaymovies/index.html",
-  "precache-manifest.bd2f17410c8a65d283b43bdaee2c110d.js": "/yaymovies/precache-manifest.bd2f17410c8a65d283b43bdaee2c110d.js",
+  "precache-manifest.f3c5042abaf9040f6711877c034b7180.js": "/yaymovies/precache-manifest.f3c5042abaf9040f6711877c034b7180.js",
   "service-worker.js": "/yaymovies/service-worker.js",
-  "static/css/main.8bf82273.chunk.css.map": "/yaymovies/static/css/main.8bf82273.chunk.css.map"
+  "static/css/main.8699a9d3.chunk.css.map": "/yaymovies/static/css/main.8699a9d3.chunk.css.map"
 }
