@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/yaymovies/precache-manifest.18a792a293e25dad144c243b1ea19e60.js"
+  "/yaymovies/precache-manifest.bd2f17410c8a65d283b43bdaee2c110d.js"
 );
 
 workbox.clientsClaim();
