@@ -1,13 +1,13 @@
 {
-  "main.css": "/React-Yay-Movies/static/css/main.c7891502.chunk.css",
-  "main.js": "/React-Yay-Movies/static/js/main.852405a3.chunk.js",
-  "main.js.map": "/React-Yay-Movies/static/js/main.852405a3.chunk.js.map",
-  "runtime~main.js": "/React-Yay-Movies/static/js/runtime~main.a4eb918e.js",
-  "runtime~main.js.map": "/React-Yay-Movies/static/js/runtime~main.a4eb918e.js.map",
-  "static/js/2.54b0294b.chunk.js": "/React-Yay-Movies/static/js/2.54b0294b.chunk.js",
-  "static/js/2.54b0294b.chunk.js.map": "/React-Yay-Movies/static/js/2.54b0294b.chunk.js.map",
-  "index.html": "/React-Yay-Movies/index.html",
-  "precache-manifest.ef7d470e249fad6c0315fe342a1655d4.js": "/React-Yay-Movies/precache-manifest.ef7d470e249fad6c0315fe342a1655d4.js",
-  "service-worker.js": "/React-Yay-Movies/service-worker.js",
-  "static/css/main.c7891502.chunk.css.map": "/React-Yay-Movies/static/css/main.c7891502.chunk.css.map"
+  "main.css": "/yaymovies/static/css/main.c7891502.chunk.css",
+  "main.js": "/yaymovies/static/js/main.e98fb83c.chunk.js",
+  "main.js.map": "/yaymovies/static/js/main.e98fb83c.chunk.js.map",
+  "runtime~main.js": "/yaymovies/static/js/runtime~main.85b9bde6.js",
+  "runtime~main.js.map": "/yaymovies/static/js/runtime~main.85b9bde6.js.map",
+  "static/js/2.54b0294b.chunk.js": "/yaymovies/static/js/2.54b0294b.chunk.js",
+  "static/js/2.54b0294b.chunk.js.map": "/yaymovies/static/js/2.54b0294b.chunk.js.map",
+  "index.html": "/yaymovies/index.html",
+  "precache-manifest.18a792a293e25dad144c243b1ea19e60.js": "/yaymovies/precache-manifest.18a792a293e25dad144c243b1ea19e60.js",
+  "service-worker.js": "/yaymovies/service-worker.js",
+  "static/css/main.c7891502.chunk.css.map": "/yaymovies/static/css/main.c7891502.chunk.css.map"
 }
