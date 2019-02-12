@@ -2,7 +2,7 @@ import React from "react";
 
 const MovieList = ({ poster, title, clickHandler }) => {
   const cardStyling = {
-    height: "200px",
+    height: "230px",
     background: "url(" + poster + ")",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",

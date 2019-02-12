@@ -3,6 +3,15 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.display-4 {
+  font-size: 2rem !important;
+}
+
+.lead {
+  font-size: 1rem !important;
+}
+
 #popular a {
   text-decoration: none;
   color: #fff;
@@ -43,7 +52,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.3);
   content: "";
   height: 100%;
@@ -75,21 +84,10 @@ body {
 }
 
 /* Media queries */
-@media (min-width: 700px) {
+@media (max-width: 768px) {
   .movie-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  .card:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    background: rgba(0, 0, 0, 0.3);
-    content: "";
-    height: 100%;
-  }
-
   .display-4 {
     font-size: 2rem !important;
   }
@@ -99,8 +97,16 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 568px) {
   .movie-grid {
     grid-template-columns: 1fr;
+  }
+
+  .display-4 {
+    font-size: 2rem !important;
+  }
+
+  .lead {
+    font-size: 0.7rem !important;
   }
 }
