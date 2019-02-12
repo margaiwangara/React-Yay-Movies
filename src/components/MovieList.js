@@ -2,13 +2,14 @@ import React from "react";
 
 const MovieList = ({ poster, title, clickHandler }) => {
   const cardStyling = {
-    width: "150px"
+    height: "200px",
+    background: "url(" + poster + ")",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center"
   };
   return (
     <div className="card m-0 p-0" style={cardStyling}>
-      <a href="#main">
-        <img src={poster} alt="sample" className="img-fluid" />
-      </a>
       <div className="card-img-overlay text-center">
         <a href="#movies" onClick={clickHandler}>
           {title}

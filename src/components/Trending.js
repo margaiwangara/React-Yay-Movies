@@ -47,7 +47,7 @@ class Trending extends Component {
       <section id="trending">
         <div className="trending-inner py-5 px-4">
           <h3 className="display-5 py-3 mb-3 border-bottom">Trending Today</h3>
-          <div className="row">
+          <div>
             <div className="movie-grid">{movieList}</div>
           </div>
         </div>
