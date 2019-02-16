@@ -83,7 +83,7 @@ class Trending extends Component {
           runtime={runtime[key]}
           voteAverage={vote_average[key]}
           voteCount={vote_count[key]}
-          clickHandler={this.clickHandler.bind(this, movie.id)}
+          clickHandler={this.clickHandler.bind(this, id[key])}
         />
       ) : (
         ""
