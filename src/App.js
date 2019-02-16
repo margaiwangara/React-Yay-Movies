@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
-import NowShowing from "./components/NowShowing";
-import Trending from "./components/Trending";
-import Popular from "./components/Popular";
+import MovieDisplayContainer from "./components/MovieDisplayContainer";
+import Footer from "./components/Footer";
 
 import "./styles/App.css";
+
 class App extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <NowShowing />
-        <Trending />
-        <Popular />
+        <MovieDisplayContainer />
+        <Footer />
       </div>
     );
   }

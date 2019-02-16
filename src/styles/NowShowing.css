@@ -1,9 +1,0 @@
-.carousel-item:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  max-width: 100%;
-  min-height: 500px;
-  background: rgba(0, 0, 0, 0.3);
-}

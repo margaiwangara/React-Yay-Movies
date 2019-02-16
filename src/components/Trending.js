@@ -30,7 +30,7 @@ class Trending extends Component {
   render() {
     const { results } = this.state;
     const movieList = results.map((movie, key) => {
-      return key < 8 ? (
+      return key < 9 ? (
         <MovieList
           key={movie.id}
           title={movie.original_title}
@@ -43,16 +43,7 @@ class Trending extends Component {
       );
     });
 
-    return (
-      <section id="trending">
-        <div className="trending-inner py-5 px-4">
-          <h3 className="display-5 py-3 mb-3 border-bottom">Trending Today</h3>
-          <div>
-            <div className="movie-grid">{movieList}</div>
-          </div>
-        </div>
-      </section>
-    );
+    return <React.Fragment>{movieList}</React.Fragment>;
   }
 }
 

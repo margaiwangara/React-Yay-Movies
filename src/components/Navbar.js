@@ -1,43 +1,34 @@
 import React from "react";
-import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div className="container">
-        <a href="#now-showing" className="navbar-brand">
-          Yay!Movies
+    <header>
+      <nav>
+        <a href="/" class="navbar-brand">
+          <span>yay</span>
+          <span>movies</span>
         </a>
-
-        <button
-          className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#myNavbar"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-
-        <div className="collapse navbar-collapse" id="myNavbar">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a href="#now-showing" className="nav-link">
-                Now Showing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#trending" className="nav-link">
-                Trending
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#popular" className="nav-link">
-                Popular
-              </a>
-            </li>
-          </ul>
+      </nav>
+      <div class="header-caption">
+        <div class="caption-inner">
+          <div class="top">
+            <h1>ralph breaks the internet</h1>
+            <h6>comedy animation adventure fantasy</h6>
+          </div>
+          <div class="center">
+            <button class="btn btn-primary">
+              <span class="main">
+                <span>view trailer</span> <i class="far fa-play-circle" />
+              </span>
+            </button>
+          </div>
+          <div class="bottom">
+            <h6>in theatres</h6>
+            <h3>5 nov, 2018 (USA)</h3>
+          </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

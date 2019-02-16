@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NowShowingSlider from "./NowShowingSlider";
+import MovieList from "./MovieList";
 
 import axios from "axios";
 
@@ -20,33 +20,27 @@ class NowShowing extends Component {
       .then(resp => this.setState({ results: resp.data.results }))
       .catch(error => console.log(error));
   }
+
+  clickHandler(id, e) {
+    e.preventDefault();
+    alert(id);
+  }
   render() {
     const { results } = this.state;
     const data = results.map((movie, key) => {
-      return key < 6 ? (
-        <NowShowingSlider
+      return key < 9 ? (
+        <MovieList
           key={movie.id}
           title={movie.original_title}
-          overview={movie.overview}
-          image={"https://image.tmdb.org/t/p/original" + movie.backdrop_path}
-          status={key === 0 ? "active" : ""}
+          poster={"https://image.tmdb.org/t/p/original" + movie.poster_path}
+          clickHandler={this.clickHandler.bind(this, movie.id)}
         />
       ) : (
         ""
       );
     });
 
-    const nowShowingStyling = {
-      minHeight: "500px",
-      maxWidth: "100%"
-    };
-    return (
-      <section id="now-showing" style={nowShowingStyling}>
-        <div className="carousel slide" data-ride="carousel" id="myCarousel">
-          <div className="carousel-inner">{data}</div>
-        </div>
-      </section>
-    );
+    return <React.Fragment>{data}</React.Fragment>;
   }
 }
 
