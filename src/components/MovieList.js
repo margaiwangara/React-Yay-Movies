@@ -1,12 +1,20 @@
 import React from "react";
 
-const MovieList = ({ poster, title, clickHandler }) => {
+const MovieList = ({
+  poster,
+  title,
+  clickHandler,
+  releaseDate,
+  runtime,
+  voteAverage,
+  voteCount
+}) => {
   return (
-    <div class="movie">
-      <div class="poster">
+    <div className="movie">
+      <div className="poster">
         <img src={poster} alt={title} />
       </div>
-      <div class="content">
+      <div className="content">
         <a href="#title" onClick={clickHandler}>
           <h3>{title}</h3>
         </a>
@@ -14,16 +22,14 @@ const MovieList = ({ poster, title, clickHandler }) => {
         <h4>superhero, adventure</h4>
         <h5>
           <span>
-            {" "}
-            <i class="far fa-calendar-alt" /> 2019-2-21{" "}
+            <i className="far fa-calendar-alt" /> {releaseDate}
           </span>
           <span>
-            {" "}
-            <i class="far fa-clock" /> 123min{" "}
+            <i className="far fa-clock" /> {runtime}min
           </span>
         </h5>
         <h6>
-          <i class="far fa-star" /> 8.2/156
+          <i className="far fa-star" /> {voteAverage} / {voteCount} responses
         </h6>
       </div>
     </div>

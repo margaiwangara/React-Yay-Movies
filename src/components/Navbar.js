@@ -4,25 +4,25 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <a href="/" class="navbar-brand">
+        <a href="/" className="navbar-brand">
           <span>yay</span>
           <span>movies</span>
         </a>
       </nav>
-      <div class="header-caption">
-        <div class="caption-inner">
-          <div class="top">
+      <div className="header-caption">
+        <div className="caption-inner">
+          <div className="top">
             <h1>ralph breaks the internet</h1>
             <h6>comedy animation adventure fantasy</h6>
           </div>
-          <div class="center">
-            <button class="btn btn-primary">
-              <span class="main">
-                <span>view trailer</span> <i class="far fa-play-circle" />
+          <div className="center">
+            <button className="btn btn-primary">
+              <span className="main">
+                <span>view trailer</span> <i className="far fa-play-circle" />
               </span>
             </button>
           </div>
-          <div class="bottom">
+          <div className="bottom">
             <h6>in theatres</h6>
             <h3>5 nov, 2018 (USA)</h3>
           </div>

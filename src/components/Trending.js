@@ -8,7 +8,15 @@ class Trending extends Component {
     super(props);
 
     this.state = {
-      results: []
+      id: [],
+      title: [],
+      genres: [],
+      release_date: [],
+      runtime: [],
+      poster: [],
+      backdrop: [],
+      vote_average: [],
+      vote_count: []
     };
 
     //this.clickHandler = this.clickHandler.bind(this);
@@ -17,9 +25,37 @@ class Trending extends Component {
   componentDidMount() {
     const apiKey = "7538a1ba766c36605ab0e8e10bab23da";
     const url = `https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}`;
+    const movieUrl = `https://api.themoviedb.org/3/movie`;
     axios
       .get(url)
-      .then(res => this.setState({ results: res.data.results }))
+      .then(resp =>
+        resp.data.results.map(data =>
+          axios
+            .get(`${movieUrl}/${data.id}?api_key=${apiKey}`)
+            .then(movie => {
+              let movieData = movie.data;
+
+              //set state
+              this.setState({
+                id: [...this.state.id, movieData.id],
+                title: [...this.state.title, movieData.title],
+                release_date: [
+                  ...this.state.release_date,
+                  movieData.release_date
+                ],
+                poster: [...this.state.poster, movieData.poster_path],
+                runtime: [...this.state.runtime, movieData.runtime],
+                vote_average: [
+                  ...this.state.vote_average,
+                  movieData.vote_average
+                ],
+                vote_count: [...this.state.vote_count, movieData.vote_count],
+                backdrop: [...this.state.backdrop, movieData.backdrop_path]
+              });
+            })
+            .catch(error => console.log(error))
+        )
+      )
       .catch(error => console.log(error));
   }
 
@@ -28,14 +64,25 @@ class Trending extends Component {
     alert(id);
   }
   render() {
-    const { results } = this.state;
-    const movieList = results.map((movie, key) => {
+    const {
+      title,
+      id,
+      poster,
+      release_date,
+      runtime,
+      vote_average,
+      vote_count
+    } = this.state;
+    const movieList = title.map((movie, key) => {
       return key < 9 ? (
         <MovieList
-          key={movie.id}
-          title={movie.original_title}
-          poster={"https://image.tmdb.org/t/p/original" + movie.poster_path}
-          id={movie.id}
+          key={id[key]}
+          title={movie}
+          poster={"https://image.tmdb.org/t/p/original" + poster[key]}
+          releaseDate={release_date[key]}
+          runtime={runtime[key]}
+          voteAverage={vote_average[key]}
+          voteCount={vote_count[key]}
           clickHandler={this.clickHandler.bind(this, movie.id)}
         />
       ) : (

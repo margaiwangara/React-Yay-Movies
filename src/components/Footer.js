@@ -4,36 +4,36 @@ import logo from "../images/logo.png";
 
 const Footer = props => (
   <footer>
-    <a href="#home" class="logo">
+    <a href="#home" className="logo">
       {/* <span>yay</span>
       <span>movies</span> */}
       <img src={logo} alt="logo" />
     </a>
-    <div class="social-links">
+    <div className="social-links">
       <ul>
         <li>
           <a href="#facebook">
-            <i class="fab fa-facebook-square" />
+            <i className="fab fa-facebook-square" />
           </a>
         </li>
         <li>
           <a href="#twitter">
-            <i class="fab fa-twitter" />
+            <i className="fab fa-twitter" />
           </a>
         </li>
         <li>
           <a href="#pinterest">
-            <i class="fab fa-pinterest" />
+            <i className="fab fa-pinterest" />
           </a>
         </li>
         <li>
           <a href="#instagram">
-            <i class="fab fa-instagram" />
+            <i className="fab fa-instagram" />
           </a>
         </li>
       </ul>
     </div>
-    <div class="copyright">&copy; 2019 - Lazy Loading Inc.</div>
+    <div className="copyright">&copy; 2019 - Lazy Loading Inc.</div>
   </footer>
 );
 
