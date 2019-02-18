@@ -2,6 +2,7 @@ import React from "react";
 import Trending from "./Trending";
 import Popular from "./Popular";
 import NowShowing from "./NowShowing";
+import ComingSoon from "./ComingSoon";
 
 import "../scripts/MovieDisplay";
 
@@ -50,7 +51,7 @@ const MovieDisplaycontainer = props => (
         </div>
         <div className="content-data" id="coming-soon">
           <div className="movies-container">
-            <Popular />
+            <ComingSoon />
           </div>
         </div>
       </div>

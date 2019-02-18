@@ -71,22 +71,18 @@ class NowShowing extends Component {
       vote_average,
       vote_count
     } = this.state;
-    const data = title.map((movie, key) => {
-      return key < 9 ? (
-        <MovieList
-          key={id[key]}
-          title={movie}
-          poster={"https://image.tmdb.org/t/p/original" + poster[key]}
-          releaseDate={release_date[key]}
-          runtime={runtime[key]}
-          voteAverage={vote_average[key]}
-          voteCount={vote_count[key]}
-          clickHandler={this.clickHandler.bind(this, id[key])}
-        />
-      ) : (
-        ""
-      );
-    });
+    const data = title.map((movie, key) => (
+      <MovieList
+        key={id[key]}
+        title={movie}
+        poster={"https://image.tmdb.org/t/p/original" + poster[key]}
+        releaseDate={release_date[key]}
+        runtime={runtime[key]}
+        voteAverage={vote_average[key]}
+        voteCount={vote_count[key]}
+        clickHandler={this.clickHandler.bind(this, id[key])}
+      />
+    ));
 
     return <React.Fragment>{data}</React.Fragment>;
   }
