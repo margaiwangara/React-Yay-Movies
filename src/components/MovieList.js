@@ -18,8 +18,6 @@ const MovieList = ({
         <a href="#title" onClick={clickHandler}>
           <h3>{title}</h3>
         </a>
-
-        <h4>superhero, adventure</h4>
         <h5>
           <span>
             <i className="far fa-calendar-alt" /> {releaseDate}

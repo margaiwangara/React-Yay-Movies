@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import MovieDisplayContainer from "./components/MovieDisplayContainer";
 import Footer from "./components/Footer";
-
 import "./styles/App.css";
 
 class App extends Component {
@@ -11,6 +10,7 @@ class App extends Component {
       <React.Fragment>
         <Navbar />
         <MovieDisplayContainer />
+
         <Footer />
       </React.Fragment>
     );

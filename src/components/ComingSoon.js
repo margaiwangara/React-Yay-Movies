@@ -83,7 +83,8 @@ class ComingSoon extends Component {
         movieDetails.poster = poster[key];
       }
     });
-    console.log(movieDetails);
+    //console.log(movieDetails);
+    return movieDetails;
   }
   render() {
     const {
@@ -95,6 +96,7 @@ class ComingSoon extends Component {
       vote_average,
       vote_count
     } = this.state;
+
     const movieList = title.map((movie, key) => (
       <MovieList
         key={id[key]}
